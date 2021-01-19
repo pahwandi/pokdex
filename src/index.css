@@ -1,0 +1,55 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+.tab-selected {
+  background: rgba(255,255,255,.7);
+  border-radius: 16px 16px 0 0;
+  color: black;
+  font-weight: bold;
+}
+
+.panel-selected {
+  display: block;
+  background: rgba(255,255,255,.7);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.tab-list {
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.3);
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  background-image: url('assets/pokeball.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .tab-list > li {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
