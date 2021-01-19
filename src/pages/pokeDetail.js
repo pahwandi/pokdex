@@ -76,6 +76,7 @@ function PokeDetail() {
     let selected = pokeDex.filter(obj => obj.id === Number(id));
     setTotal(selected.length)
   }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(onPokeListUpdate, [pokeDex])
 
   if (loading) return <p>Loading...</p>;

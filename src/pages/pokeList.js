@@ -33,6 +33,7 @@ function PokeList() {
 
     return () => { }
   }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(onDataUpdate, [data, error, loading])
 
   if (loading) return <p>Loading...</p>;
